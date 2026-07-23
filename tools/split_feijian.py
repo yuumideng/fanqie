@@ -10,7 +10,7 @@
 import re
 import os
 
-ROOT = '/Users/dengzeyu/workspace/fanqie'
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, 'resources', '飞剑问道.txt')
 OUTDIR = os.path.join(ROOT, 'resources', '飞剑问道_分章')
 INDEX = os.path.join(ROOT, '飞剑问道大纲', '00_原文索引.md')

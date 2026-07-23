@@ -12,7 +12,7 @@ import re
 import os
 import sys
 
-ROOT = '/Users/dengzeyu/workspace/fanqie'
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, 'resources', '吞噬星空.txt')
 INDEX = os.path.join(ROOT, '吞噬星空大纲', '00_原文索引.md')
 OUT = os.path.join(ROOT, 'resources', '吞噬星空_分章')

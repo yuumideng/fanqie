@@ -4,6 +4,17 @@
 
 ## 2026-07-23
 
+### 修复全项目硬编码绝对路径，提升脚本可移植性
+
+- 分支：`codex/20260723-09`
+- 将 5 个分割脚本（`split_chapters.py`、`split_manghuang.py`、`split_feijian.py`、`split_cangyuan.py`、`split_xueying.py`）的 `ROOT` 从硬编码 `/Users/dengzeyu/workspace/fanqie` 改为 `os.path.dirname(os.path.dirname(os.path.abspath(__file__)))`，换机克隆即可运行；
+- 将 3 个 state 文件（莽荒纪第三十二卷、雪鹰领主第三十三/三十七篇）中的绝对路径引用改为仓库相对路径；
+- 更新 `docs/任务日志.md` 的"工作目录"字段，说明脚本自动定位仓库根目录；
+- 全库 `grep "Users/dengzeyu"` 验证通过（排除归档目录），无残留硬编码路径；
+- `git diff --check` 通过。
+
+## 2026-07-23
+
 ### 补充未完成优化项并交接当前项目状态
 
 - 分支：`codex/20260723-08`
