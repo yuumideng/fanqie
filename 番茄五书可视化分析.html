@@ -172,6 +172,7 @@ function renderTension() {
         xAxis: { type: 'category', data: DATA.tension_x.map((x, i) => i + '%'), name: '全书进度', axisLabel: { interval: 9 } },
         yAxis: { type: 'value', name: '张力均值' },
         dataZoom: [{ type: 'inside' }, { type: 'slider', height: 20, bottom: 10 }],
+        series: series,
     });
     window.addEventListener('resize', () => chart.resize());
 }
@@ -196,6 +197,7 @@ function renderPleasure() {
         xAxis: { type: 'category', data: DATA.tension_x.map((x, i) => i + '%'), name: '全书进度', axisLabel: { interval: 9 } },
         yAxis: { type: 'value', name: '爽点均值' },
         dataZoom: [{ type: 'inside' }, { type: 'slider', height: 20, bottom: 10 }],
+        series: series,
     });
     window.addEventListener('resize', () => chart.resize());
 }
@@ -215,6 +217,7 @@ function renderTags() {
         grid: { left: 50, right: 30, top: 50, bottom: 40 },
         xAxis: { type: 'category', data: DATA.tag_labels },
         yAxis: { type: 'value', name: '覆盖率(%)' },
+        series: series,
     });
     window.addEventListener('resize', () => chart.resize());
 }
@@ -247,6 +250,7 @@ function renderScatter() {
         xAxis: { type: 'value', name: '全书进度(%)', min: 0, max: 100 },
         yAxis: { type: 'value', name: '爽点强度' },
         dataZoom: [{ type: 'inside' }, { type: 'slider', height: 20, bottom: 10 }],
+        series: series,
     });
     window.addEventListener('resize', () => chart.resize());
 }
