@@ -46,5 +46,5 @@
 6. 圣主仇恨（家乡源世界，等实力再进步横扫迷界走廊）
 
 ## 产出文件
-- 大纲：`/Users/dengzeyu/workspace/fanqie/雪鹰领主大纲/37_第三十七篇_在路上_大纲.md`
-- state：`/Users/dengzeyu/workspace/fanqie/雪鹰领主大纲/_state/第三十七篇_state.md`
+- 大纲：`雪鹰领主大纲/37_第三十七篇_在路上_大纲.md`
+- state：`雪鹰领主大纲/_state/第三十七篇_state.md`

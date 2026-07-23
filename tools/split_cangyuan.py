@@ -12,7 +12,7 @@
 """
 import re, os, shutil
 
-ROOT = '/Users/dengzeyu/workspace/fanqie'
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, 'resources', '沧元图.txt')
 OUTDIR = os.path.join(ROOT, 'resources', '沧元图_分章')
 INDEX = os.path.join(ROOT, '沧元图大纲', '00_原文索引.md')

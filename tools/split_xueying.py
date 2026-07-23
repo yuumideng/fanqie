@@ -3,7 +3,7 @@
 """《雪鹰领主》索引生成 + 按章分割脚本（篇标记单独行，章节不带篇前缀，同莽荒纪模式）"""
 import re, os
 
-ROOT = '/Users/dengzeyu/workspace/fanqie'
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, 'resources', '雪鹰领主.txt')
 OUTDIR = os.path.join(ROOT, 'resources', '雪鹰领主_分章')
 INDEX = os.path.join(ROOT, '雪鹰领主大纲', '00_原文索引.md')
